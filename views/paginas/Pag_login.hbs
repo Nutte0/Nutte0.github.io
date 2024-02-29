@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="CSS/style_login.css">
+</head>
+
+<body>
+
+    <main> <!-- Inicio de la sección principal del contenido -->
+
+        <div class="contenedor__todo"><!-- Div que envuelve todo el contenido -->
+
+
+
+            <div class="caja__trasera"><!-- Div para las cajas traseras de inicio de sesión y registro -->
+                <div class="caja__trasera-login">
+                    <h3>¿ya tienes una cuenta?</h3><!-- Encabezado para la caja de inicio de sesión -->
+                    <p>inicia sesion para ingresar</p> <!-- Párrafo informativo para la caja de inicio de sesión -->
+                    <button id="btn__iniciar-sesion">iniciar sesion</button><!-- Botón para iniciar sesión -->
+                </div>
+
+
+                <div class="caja__trasera-register">
+                    <h3>¿aun no tienes una cuenta?</h3><!-- Encabezado para la caja de registro -->
+                    <p>registrate para iniciar sesion</p><!-- Párrafo informativo para la caja de registro -->
+                    <button id="btn__registrarse">registrarse</button><!-- Botón para registrarse -->
+                </div>
+            </div>
+
+
+            <!--formularios para login y register-->
+            <div class="contenedor__login-register">
+                <form action="/Pag_login" method="POST" class="formulario__login">
+                    <div class="form-group"></div>
+                    <h2>Iniciar sesion</h2>
+                    <input type="text" placeholder="correo electronico" name="email">
+                    <input type="password" placeholder="contraseña" name="password">
+                    <button type="submit"class="btn btn-primary btn-block">entrar</button>
+                </form>
+                <form action="/Pag_register" method="POST" class="formulario__register">
+                    <div class="form-group"></div>
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="nombre completo" name="name">
+                    <input type="text" placeholder="correo electronico" name="email">
+                    <!--<input type="text" placeholder="usuario" name="username">-->
+                    <input type="password" placeholder="contraseña" name="password">    
+                    <button type="submit"class="btn btn-primary btn-block">registrarse</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <!-- Enlace a un archivo JavaScript en la carpeta "JS" -->
+    <script src="JS/login.js"></script>
+</body>
+
+</html>

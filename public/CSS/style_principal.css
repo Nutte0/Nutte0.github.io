@@ -1,0 +1,392 @@
+/* Establece la fuente predeterminada para todo el contenido en la página */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Establece la imagen de fondo para el cuerpo de la página */
+
+body {
+    background-image: url(../imagenes/fondo1.jpg);
+    /* Reemplaza 'imgPagina1/img10.jpg' con la ruta o URL de tu imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center;
+    /* Centra la imagen en el fondo */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Alinear el texto "Cali Colombia" en el centro */
+.about-text h2 {
+    text-align: center;
+    /* Alineación en el centro */
+}
+
+/* Alinea el párrafo en el centro y justifica el texto */
+
+.about-text p {
+    text-align: justify;
+    /* Alineación en el centro */
+}
+
+/* Define el espaciado interior de las secciones */
+
+.section-padding {
+
+    padding: 70px 0;
+}
+
+/* Cambia el color del texto a blanco para que destaque en imágenes con colores intensos */
+.carousel-caption h5,
+.carousel-caption p {
+    color: white;
+}
+
+/* Aumenta el tamaño de la fuente para que el texto sea más legible */
+.carousel-caption h5 {
+    font-size: 30px;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+}
+
+/* Agrega una sombra al texto para resaltarlo del carrusel*/
+.carousel-caption h5,
+.carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+
+}
+
+/* Cambia el tipo de letra de las frases en los slides */
+.carousel-caption h5,
+.carousel-caption p {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Ajusta la altura de los elementos de carrusel */
+.carousel-item {
+    height: 80vh;
+    min-height: 300px
+}
+
+.carousel-item img {
+    filter: brightness(0.7);
+}
+
+
+/* Alinea los captions del carrusel */
+
+.carousel-caption {
+    bottom: 200px;
+    z-index: 2;
+}
+
+/* Estilo para el título en los captions del carrusel */
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+/* Estilo para los párrafos en los captions del carrusel */
+
+.carousel-caption p {
+    /* Cambia el color del texto */
+    color: rgba(255, 255, 255, 1);
+    /* Ajusta el tamaño de fuente */
+    font-size: 24px;
+    /* Permite ajustar la posición en el slide */
+    position: absolute;
+    /* Posiciona el texto verticalmente en el centro */
+    top: 50%;
+    /* Posiciona el texto horizontalmente en el centro */
+    left: 50%;
+    /* Centra el texto correctamente */
+    transform: translate(-50%, -50%);
+    /* Alineación justificada del texto */
+    text-align: justify;
+    /* Espaciado uniforme entre palabras */
+    text-justify: inter-word;
+    /* Agrega sombra al texto de los slides */
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 1);
+    /* Ocupa todo el ancho del carrusel */
+    width: 100%;
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+#turistas-container .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 206%;
+    box-sizing: border-box;
+
+}
+
+#turistas-container .img-area {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    /* Ajusta este valor según tus necesidades */
+}
+
+#turistas-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+/* Ajustes para los elementos de navegación de la barra */
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+/* Estilos para el texto del logotipo en la barra de navegación */
+.navbar-dark .navbar-brand {
+    color: #ffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+/* Cambia el color del logotipo al hacer hover o focus */
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #000;
+}
+
+/* Ajustes para la altura de elementos con clase 'w-100' */
+
+.w-100 {
+    height: 100vh;
+}
+
+/* Estilos para el botón de la barra de navegación */
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+/* Ajustes para los íconos en la sección de servicios */
+.services .card-body i {
+    font-size: 50px;
+}
+
+/* Alineación del texto y espaciado para los párrafos en la sección de servicios */
+.services .card-body p,
+.portfolio .card-body p {
+    text-align: justify;
+    /* Alineación justificada del texto */
+    text-justify: inter-word;
+    /* Espaciado uniforme entre palabras */
+}
+
+/* Alineación del texto y espaciado para los párrafos en la sección de comentarios */
+.comments .card-body p {
+    text-align: justify;
+    /* Alineación justificada del texto */
+    text-justify: inter-word;
+    /* Espaciado uniforme entre palabras */
+}
+
+/* Estilos para centrar el GIF y moverlo hacia la derecha */
+.centered-gif {
+    display: block;
+    margin: 0 auto;
+    /* Esto centrará el GIF horizontalmente */
+    margin-top: 20px;
+    /* Agrega un espacio entre el GIF y los cuadros */
+    margin-left: 80px;
+    /* Ajusta este valor para mover el GIF hacia la derecha */
+    max-width: 100%;
+    /* Asegura que el GIF no sea más ancho que su contenedor */
+}
+
+/* Estilos para los cuadros negros en las secciones Lugares turísticos, Soporte, Comentarios y Guías turísticos */
+.card {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Espacio entre los cuadros */
+    height: 100%;
+}
+
+
+/* Alineación del texto dentro de los cuadros */
+.card h3,
+.card p {
+    text-align: center;
+}
+
+/* Asegurar que los cuadros tengan la misma altura en una fila */
+.row .card {
+    display: flex;
+    align-items: stretch;
+}
+
+@media (max-width: 767px) {
+    .row .card {
+        flex-direction: column;
+    }
+}
+
+
+.team .card-body i {
+    font-size: 20px;
+}
+
+@media(max-width: 767) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .w-100 {
+        height: 70vh;
+    }
+
+    .carousel-caption {
+        bottom: 125px
+    }
+
+    .carousel-caption {
+        font-size: 17pxs;
+    }
+
+    .carousel-caption a {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+
+    .about-text {
+
+        padding-top: 50px;
+    }
+
+    .card {
+
+        margin-bottom: 30px;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+}
+
+
+/*footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Pie de Pagina*/ 
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+/* Estilos para el primer grupo de elementos en el pie de página */
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 30px;
+}
+
+/* Estilos para el segundo grupo de elementos en el pie de página */
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* Estilos responsivos para dispositivos con ancho máximo de 800px */
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

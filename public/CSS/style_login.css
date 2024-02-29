@@ -1,0 +1,217 @@
+/* Estilos para aplicar a todos los elementos en la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+}
+
+/* Estos estilos aplican un "reset" a los márgenes y el padding de todos los elementos en la página. Además, establecen la fuente predeterminada como sans-serif y eliminan la decoración de texto. Esto es comúnmente utilizado para asegurarse de que los estilos se apliquen de manera consistente en todos los navegadores. */
+
+/* Estilos para el cuerpo de la página */
+
+body {
+    background-image: url(../imagenes/mar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+ 
+}
+
+main {
+    /* Estos estilos configuran la imagen de fondo del cuerpo de la página. La imagen se ajusta para cubrir todo el fondo, no se repite y se mantiene centrada y fija en la ventana del navegador. */
+
+    /* Estilos para la sección principal */
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* Estos estilos establecen el ancho de la sección principal, agregan un espacio de relleno en los bordes, y centran la sección en la página. También, se aplica un margen superior de 100px. */
+
+/* Estilos para el contenedor principal */
+.contenedor__todo {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+/* Estos estilos definen el ancho máximo del contenedor principal, lo centran en la página y le asignan una posición relativa. */
+
+/* Estilos para las cajas traseras de inicio de sesión y registro */
+.caja__trasera {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(0px);
+    background-color: rgba(0, 229, 255, 0.5);
+
+}
+
+/* Estos estilos aplican un fondo a las cajas traseras con un efecto de desenfoque y color de fondo semi-transparente. También, establecen la alineación y el espacio interior de las cajas. */
+
+/* Estilos para elementos dentro de las cajas traseras */
+.caja__trasera div {
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+/* Estos estilos afectan a los elementos dentro de las cajas traseras, agregando márgenes y un efecto de transición en sus propiedades. */
+
+/* Estilos para títulos, párrafos y botones dentro de las cajas traseras */
+.caja__trasera div p,
+.caja__trasera div button {
+    margin-top: 30px;
+}
+
+/* Estos estilos ajustan los márgenes superiores de los párrafos y botones dentro de las cajas traseras. */
+
+.caja__trasera div h3 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+/* Estos estilos configuran el peso de fuente y el tamaño de los encabezados dentro de las cajas traseras. */
+
+/* Estilos para botones dentro de las cajas traseras */
+
+.caja__trasera button {
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover {
+    background: #fff;
+    color: #46A2FD;
+}
+
+/* Estos estilos aplican un formato a los botones en las cajas traseras, incluyendo un borde, tamaño de fuente, color de texto y efecto de transición en respuesta al hover. */
+
+/* Estilos para el formulario de inicio de sesión y registro */
+
+.contenedor__login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+}
+
+/* Estos estilos definen la disposición de los formularios de inicio de sesión y registro, centrándolos en la página y asignando una posición relativa para ajustes posteriores. */
+
+/* Estilos para los formularios */
+.contenedor__login-register form {
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    /*para poderlo mover*/
+    border-radius: 20px;
+
+}
+
+/* Estos estilos aplican un fondo blanco a los formularios, añaden espacio interior, establecen la posición en la página y agregan bordes redondeados a los formularios. */
+
+/* Estilos para títulos en los formularios */
+.contenedor__login-register form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46a2fd;
+}
+
+/* Estos estilos definen el tamaño, alineación y color de los títulos en los formularios. */
+
+/* Estilos para campos de entrada en los formularios */
+.contenedor__login-register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Estos estilos ajustan los campos de entrada en los formularios, incluyendo el ancho, margen superior, relleno, borde, fondo y tamaño de fuente. Además, eliminan el contorno por defecto del campo de entrada. */
+
+/* Estilos para botones en los formularios */
+.contenedor__login-register form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background-color: rgba(0, 229, 255, 0.5);
+    color: gray;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Estos estilos aplican un formato a los botones en los formularios, estableciendo el tamaño, relleno, color de fondo, color de texto, cursor y eliminando el contorno por defecto del botón. */
+
+/* Estilos para el formulario de inicio de sesión */
+.formulario__login {
+    opacity: 1;
+    display: block;
+}
+
+/* Estos estilos definen la opacidad y visibilidad del formulario de inicio de sesión, asegurándose de que esté visible por defecto. */
+
+/* Estilos para el formulario de registro (inicialmente oculto) */
+.formulario__register {
+    display: none;
+}
+
+/*trabajando en el responsive design*/
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 50px;
+
+    }
+
+    .caja__trasera {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+
+    }
+
+    .caja__trasera div {
+        margin: 0px;
+        position: absolute;
+
+    }
+
+    /*formulario*/
+    .contenedor__login-register {
+        top: -10px;
+        left: -5px;
+        margin: auto;
+
+    }
+
+    .contenedor__login-register form {
+        position: relative;
+    }
+
+
+
+
+}

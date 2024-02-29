@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Incluye el archivo CSS de Bootstrap desde una ubicación externa. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Incluye el archivo de íconos de Bootstrap desde una ubicación externa. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Enlaza tu propio archivo CSS personalizado llamado 'style.css'. -->
+
+    <link rel="stylesheet" href="CSS/style_principal.css">
+</head>
+
+<body>
+    <!-- Barra de navegación Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Título y logotipo del sitio -->
+            <a href="#" class="navbar-brand"> <span class="text-primary">Traveling</span> in Cali </a>
+            <!-- Botón de menú desplegable en pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                aria-controls="navbarS" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Elementos de menú de navegación -->
+            <div class=" collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="/principal" class="nav-link">inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/lugares" class="nav-link">lugares turisticos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/guias" class="nav-link">Guias Turisticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">iniciar sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- Indicadores de carrusel -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!-- Contenido del carrusel -->
+        <div class="carousel-inner">
+            <!-- Slide 1 (Activo) -->
+            <div class="carousel-item active">
+                <img src="imagenes/slide 1.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption" style="top: 70%">
+                    <p>
+                        La esencia de Cali se encuentra en su ritmo, su gente y su pasión inquebrantable. Vive la salsa,
+                        abraza la alegría y déjate llevar por la magia de esta ciudad. </p>
+
+                </div>
+
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="imagenes/slide 2.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption" style="top: 70%">
+                    <p>
+                        "Vive la vida al máximo, ríe a carcajadas, baila como si nadie te estuviera viendo y abraza cada
+                        momento con pasión. La vida es un regalo, ¡disfrútala al máximo en cada paso de tu viaje!" </p>
+
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="imagenes/slide 3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption" style="top: 70%">
+                    <p>
+                        "El turismo en Cali es un viaje hacia el corazón de la salsa, la cultura y la hospitalidad,
+                        donde cada paso es una experiencia única." </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- Controles de navegación del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--seccion 1-->
+    <section class="about section-padding">
+        <!-- Contenedor principal de la sección  -->
+
+        <div class="container">
+            <div class="row">
+                <!-- Columna izquierda con imagen -->
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="imagenes/img4.jpg" class="img-fluid" alt="">
+
+                    </div>
+
+                </div>
+                <!-- Columna derecha con texto descriptivo -->
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text text-white">
+                        <!-- Título -->
+                        <h2>Cali Colombia</h2>
+                        <p>
+                            <!-- Párrafo descriptivo -->
+
+                            ¡Bienvenido a nuestro portal de turismo en Cali! Explora la ciudad de Cali, Colombia, y
+                            descubre su rica cultura, impresionantes paisajes, lugares turísticos, eventos locales,
+                            opciones de alojamiento y deliciosa comida. Obtén consejos útiles para una experiencia única
+                            en esta encantadora ciudad. ¡Prepárate para una aventura inolvidable en Cali!
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!---seccion 2-->
+    <section class="services section-padding">
+        <!-- Contenedor principal de la sección de Servicios -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Encabezado de la sección -->
+                    <div class="section-header text-center text-white pb-5" style="margin-top: -120px;">
+                        <h2>Nuestros Servicios</h2>
+                        <p>
+                            En nuestra página de turismo en Cali, te ofrecemos una experiencia única para explorar y
+                            disfrutar de la hermosa ciudad de Cali, Colombia. Hemos preparado una amplia gama de
+                            servicios diseñados para ayudarte a aprovechar al máximo tu visita a esta vibrante ciudad.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <!-- Primera tarjeta de servicio -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-laptop"></i>
+                            <h3 class="card-title">Información</h3>
+                            <p>Te ofrecemos toda la información esencial que necesitas para explorar y disfrutar al
+                                máximo de tu experiencia en Cali.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda columna con un GIF centrado -->
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <img src="imagenes/turista-unscreen.gif" class="centered-gif" alt="Descripción del GIF">
+                </div>
+                <!-- Tercera tarjeta de servicio -->
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-wifi"></i>
+                            <h3 class="card-title">internet</h3>
+                            <p>Para disfrutar de todo el contenido y servicios que ofrecemos, es necesario contar con
+                                una conexión a Internet activa.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Seccion 3-->
+    <section class="portfolio section-padding">
+        <!-- Contenedor principal de la sección Portfolio -->
+        <div class="container" style="margin-top: -100px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white pb-5">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <!-- Primer cuadro de información sobre "Lugares turísticos" -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2">
+                        <div class="card-body text-white">
+                            <div class="img-area mb-4">
+                                <img src="imagenes/img5.jpg" class="img-fluid" alt="">
+
+                            </div>
+                            <h3>Lugares turísticos
+                            </h3>
+                            <p class="lead">
+                                Descubre la belleza natural, la cultura y las tradiciones de Cali en un emocionante
+                                viaje. Explora los sitios turísticos emblemáticos y sumérgete en la alegría y
+                                hospitalidad de esta tierra de la salsa. Cali te espera con los brazos abiertos para
+                                llenar tus días de aventuras y tu corazón de recuerdos invaluables. ¡Prepárate para
+                                enamorarte de sus encantos únicos!
+                            </p>
+                            <a href="/lugares" class="nav-link">
+                            <button class="btn bg-primary text-white">Mas informacion</button></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Segundo cuadro de información sobre "Soporte" -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2">
+                        <div class="card-body text-white">
+                            <div class="img-area mb-4">
+                                <img src="imagenes/img6.jpg" class="img-fluid" alt="">
+
+                            </div>
+                            <h3>Soporte</h3>
+                            <p class="lead">
+                                "Ofrecemos un sólido y confiable soporte para garantizar que tu experiencia en nuestra
+                                página de turismo en Cali sea enriquecedora. Nuestro equipo está comprometido en
+                                brindarte asistencia en tiempo real, resolver tus dudas y ayudarte a navegar por nuestra
+                                plataforma de manera eficiente."
+                            </p>
+                            <a href="mailto: supporttraveling@gmail.com">
+                            <em><button class="btn bg-primary text-white">Mas informacion</button></a>
+                            </em>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Tercer cuadro de información sobre "Guias turisticas" -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2">
+                        <div class="card-body text-white">
+                            <div class="img-area mb-4">
+                                <img src="imagenes/img8.jpg" class="img-fluid" alt="">
+
+                            </div>
+                            <h3>Guias turisticas</h3>
+                            <p class="lead">
+                                Te ofrecemos una experiencia enriquecedora con guías turísticos locales. Conocen a fondo
+                                la ciudad y te llevarán a lugares emblemáticos y secretos, brindándote información
+                                valiosa y experiencias auténticas. Descubre la cultura, historia y gastronomía de Cali
+                                con su pasión. Aprovecha al máximo tu viaje con nuestros apasionados guías turísticos.
+                            </p>
+                            <a href="/guias" class="nav_link"> 
+                                <em><button class="btn bg-primary text-white">Mas informacion</button> </a></em>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Cuarto cuadro de información sobre "Comentarios" -->
+                <div class="col-12 col-md-12 col-lg-4" style="margin-top: 20px ">
+                    <div class="card text-light text-center bg-dark pb-2">
+                        <div class="card-body text-white">
+                            <div class="img-area mb-4">
+                                <img src="imagenes/img7.jpg" class="img-fluid" alt="">
+
+                            </div>
+                            <h3>Comentarios</h3>
+                            <p class="lead">
+                                Te invitamos a compartir tus comentarios y opiniones sobre tu experiencia en nuestra
+                                página de turismo. Tu voz es fundamental para nosotros, ya que nos ayuda a mejorar
+                                constantemente y adaptar nuestros servicios y contenido a tus necesidades.
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Quinto cuadro de información "tipos de turistas" -->
+                <div id="turistas-container" class="col-12 col-md-12 col-lg-4" style="margin-top: 20px">
+                    <div class="card text-light text-center bg-dark pb-2">
+                        <div class="card-body text-white">
+                            <div class="img-area mb-4">
+                                <img src="imagenes/turistas.jpg" class="img-fluid" alt="turista">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="pie-pagina">
+        <!-- Contenedor principal del pie de página -->
+        <div class="grupo-1">
+            <div class="box">
+                <!-- Caja con una imagen-->
+                <figure>
+                    <a href="#">
+                        <img src="imagenes/img9.jpeg " alt="">
+                    </a>
+
+
+                </figure>
+
+            </div>
+            <div class="box">
+                <!-- Caja con información "Sobre nosotros" -->
+                <h2>Sobre nosotros</h2>
+                <p>Andres Felipe vivas palacios <br>
+                    correo: andres.vivas02@usc.edu.co
+                </p>
+                <p>Hoyos Tovar Luis Gabriel <br>
+                    correo: Luis.hoyos01@usc.edu.co
+                </p>
+                <p>Luis Felipe Waitoto Garces <br>
+                    correo: Lfwg98@gmail.com
+                </p>
+
+                <h2>Ingeniera de Sistemas</h2>
+
+            </div>
+            <div class="box">
+                <!-- Caja con enlaces a redes sociales -->
+                <h2>Siguenos</h2>
+                <P class="red-social">
+                    <i class="bi bi-twitter text white mx-1"></i>
+                    <i class="bi bi-instagram text white mx-1"></i>
+                    <i class="bi bi-facebook text white mx-1"></i>
+                    <i class="bi bi-youtube text white mx-1"></i>
+                </P>
+                <div>
+                    <h2>Soporte al cliente</h2>
+                    <p>
+                        <a href="mailto: supporttraveling@gmail.com"><em>link soporte</em></a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="grupo-2">
+            <!-- Información de derechos de autor y año -->
+            <small>&copy; 2023 <b>Slee Dw</b> - todos los derechos reservados. </small>
+
+        </div>
+
+
+    </footer>
+    <!-- Inclusión del script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

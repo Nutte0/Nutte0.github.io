@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lugares Turisticos</title>
+
+
+    <!-- script de botones en acordeones -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Incluye el archivo CSS de Bootstrap desde una ubicación externa. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Incluye el archivo de íconos de Bootstrap desde una ubicación externa. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Enlaza tu propio archivo CSS personalizado llamado 'style.css'. -->
+    <!-- Incluye el archivo de íconos de Bootstrap desde una ubicación externa. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="CSS/style_lugares.css">
+
+    <style>
+        body {
+            background-image: url(imagenes/orig.gif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+            opacity: 0.9;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    </script>
+
+    <!-- Barra de navegación Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <div class="container">
+            <!-- Título y logotipo del sitio -->
+            <a href="#" class="navbar-brand"> <span class="text-primary">Traveling</span> in Cali </a>
+            <!-- Botón de menú desplegable en pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                aria-controls="navbarS" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Elementos de menú de navegación -->
+            <div class=" collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="/principal" class="nav-link">inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/lugares" class="nav-link">lugares turisticos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/guias" class="nav-link">Guias Turisticos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">Cerrar sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- Indicadores de carrusel -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!-- Contenido del carrusel -->
+        <div class="carousel-inner">
+            <!-- Slide 1 (Activo) -->
+            <div class="carousel-item active">
+                <img src="imagenes/cali.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption" style="top: 60%">
+                    <p>
+                        "Cali, conocida como la "Sultana del Valle", es una ciudad colombiana que irradia alegría y
+                        vitalidad. " </p>
+
+                </div>
+
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="imagenes/jobita.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption" style="top: 50%">
+                    <p>
+                        Su espíritu festivo se refleja en la música y la danza, especialmente en la salsa,
+                        que ha llevado a la ciudad a ser reconocida como la "Capital Mundial de la Salsa" </p>
+
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="imagenes/cultura.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption" style="top: 50%">
+                    <p>
+                        La mezcla de tradición y modernidad hace de Cali un destino único,
+                        donde se puede disfrutar de su rica cultura, su gastronomía deliciosa y la calidez de su gente
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Controles de navegación del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="col-md-6 mx-auto text-center">
+        <h2 class="text-light">Lugares Turisticos</h2>
+        <p class="lead text-muted justify-text">
+
+            ¡Bienvenido a nuestra página de lugares turísticos, donde la aventura y la exploración se encuentran en cada
+            rincón! Sumérgete en la riqueza cultural, la belleza natural y las experiencias inolvidables que ofrecen
+            nuestros destinos seleccionados. Te invitamos a descubrir
+            el encanto único de cada lugar y a crear recuerdos que perdurarán para siempre.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!--Primer Acordion-->
+            <div class="col-md-6">
+                <div class="accordion" id="accordionUno">
+                    <div class="accordion-item">
+                        <div>
+                            <img src="imagenes/TorreDeCali.jpg" class="img-fluid guia-image" alt="Torre de Cali"
+                                style="width: 100%;">
+                        </div>
+
+                        <h2 class="accordion-header" id="headingUno">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+                                Torre de cali
+                            </button>
+                        </h2>
+
+                        <div id="collapseUno" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                            data-bs-parent="#accordionUno">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <strong style="margin-bottom: 1px;">Nombre</strong>Torre de Cali <br>
+                                        <strong style="margin-bottom: 1px;">Horarios</strong> Lunes 4pm a 6pm- Martes
+                                        10am a 2pm<br>
+                                        <strong style="margin-bottom: 1px;">Guias</strong> Alejandra torres<br>
+                                        <strong style="margin-bottom: 1px;">Informacion del lugar</strong>
+                                        <p>La Torre de Cali destaca en el horizonte como un hito moderno.
+                                            Con sus 42 pisos, es el rascacielos más alto de Colombia. Desde
+                                            su mirador, se puede apreciar la expansión urbana de Cali y la
+                                            majestuosidad de la cordillera. La torre no solo representa el
+                                            progreso arquitectónico, sino que también ofrece una perspectiva
+                                            única de la ciudad.
+                                        </p>
+                                        <button class="Torre bg-primary text-white">Comentarios</button>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $(".Torre").on("click", function () {
+                                                  // Cambiar la información con la nueva información de comentarios
+                                                    $("#collapseUno .row").html(`
+                                                    <div class="col-md-12">
+                                                    <strong style="margin-bottom: 1px;">Comentarios</strong>
+                                                        <ul id="comentariosUno">
+                                                            <li>La iglesia parece un castillo</li>
+                                                            <li>Deberian darle mas importancia a esta iglesia</li>
+                                                            <li>Esperaba ver algo mejor</li>
+                                                        </ul>
+                                                                <form id="formComentarioUno">
+                                                                <textarea id="nuevoComentarioUno"></textarea>
+                                                                <input type="submit" value="Enviar comentario">
+                                                                </form>
+                                                    </div>
+                                                    `);
+
+                                                    // Manejar el envío del comentario
+                                                    $("#formComentarioUno").submit(function (event) {
+                                                        event.preventDefault();
+                                                        var nuevoComentario = $("#nuevoComentarioUno").val();
+                                                        $("#comentariosUno").append("<li>" + nuevoComentario + "</li>");
+                                                        // Puedes limpiar el campo de comentario después de agregarlo si lo deseas
+                                                        $("#nuevoComentarioUno").val("");
+                                                    });
+
+                                                    // Ocultar el botón de comentarios si lo deseas
+                                                    $(".Torre").hide();
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Segundo Acordion-->
+            <div class="col-md-6">
+                <div class="accordion" id="accordionDos">
+                    <div class="accordion-item">
+                        <div>
+                            <img src="imagenes/Ermita.jpg" class="img-fluid guia-image" alt="Ermita"
+                                style="width: 100%;">
+                        </div>
+
+                        <h2 class="accordion-header" id="headingDos">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDos" aria-expanded="true" aria-controls="collapseDos">
+                                Ermita
+                            </button>
+                        </h2>
+
+                        <div id="collapseDos" class="accordion-collapse collapse " aria-labelledby="headingDos"
+                            data-bs-parent="#accordionDos">
+                            <div class="accordion-body">
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <strong style="margin-bottom: 1px;">Nombre</strong> Ermita <br>
+                                        <strong style="margin-bottom: 1px;">Horarios</strong> miercoles 2pm a 6pm-
+                                        jueves 10am a 2pm<br>
+                                        <strong style="margin-bottom: 1px;">Guias</strong> Juan Rodriguez<br>
+                                        <strong style="margin-bottom: 1px;">Informacion del lugar</strong>
+                                        <p>La Ermita es una iglesia icónica ubicada en el centro de Cali.
+                                            Su arquitectura gótica y su historia centenaria la convierten
+                                            en un lugar de interés cultural. La plaza que la rodea es un
+                                            espacio donde la gente se reúne para disfrutar de eventos culturales
+                                            y sociales. La Ermita es un recordatorio tangible de la tradición
+                                            religiosa y la importancia histórica de Cali.
+                                        </p>
+                                        <!-- ... (tu código anterior) ... -->
+
+                                        <button class="Ermita bg-primary text-white">Comentarios</button>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $(".Ermita").on("click", function () {
+                                                    // Cambiar la información con la nueva información de comentarios
+                                                    $("#collapseDos .row").html(`
+                                                    <div class="col-md-12">
+                                                    <strong style="margin-bottom: 1px;">Comentarios</strong>
+                                                        <ul id="comentariosErmita">
+                                                            <li>La iglesia parece un castillo</li>
+                                                            <li>Deberian darle mas importancia a esta iglesia</li>
+                                                            <li>Esperaba ver algo mejor</li>
+                                                        </ul>
+                                                                <form id="formComentarioErmita">
+                                                                <textarea id="nuevoComentarioErmita"></textarea>
+                                                                <input type="submit" value="Enviar comentario">
+                                                                </form>
+                                                    </div>
+                                                    `);
+
+                                                    // Manejar el envío del comentario
+                                                    $("#formComentarioErmita").submit(function (event) {
+                                                        event.preventDefault();
+                                                        var nuevoComentario = $("#nuevoComentarioErmita").val();
+                                                        $("#comentariosErmita").append("<li>" + nuevoComentario + "</li>");
+                                                        // Puedes limpiar el campo de comentario después de agregarlo si lo deseas
+                                                        $("#nuevoComentarioErmita").val("");
+                                                    });
+
+                                                    // Opcional: Ocultar el botón de comentarios si lo deseas
+                                                    $(".Ermita").hide();
+                                                });
+                                            });
+                                        </script>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tercer acordeón -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <div>
+                            <img src="imagenes/cristoRey.JPG" class="img-fluid guia-image cristoRey-imagen"
+                                alt="Cristo Rey" style="width: 100%;">
+                        </div>
+
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTres" aria-expanded="true" aria-controls="collapseTres">
+                                Cristo Rey
+                            </button>
+                        </h2>
+
+                        <div id="collapseTres" class="accordion-collapse collapse" class="cirsto rey"
+                            aria-labelledby="headingTres" data-bs-parent="#accordionTres">
+                            <div class="accordion-body">
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <strong style="margin-bottom: 1px;">Nombre</strong> Cristo rey <br>
+                                        <strong style="margin-bottom: 1px;">Horarios</strong> Viernes 4pm a 6pm- Sabado
+                                        10am a 2pm<br>
+                                        <strong style="margin-bottom: 1px;">Guias</strong> Roberto Mendoza<br>
+                                        <strong style="margin-bottom: 1px;">Informacion del lugar</strong>
+                                        <p>Situado en el cerro Los Cristales, Cristo Rey es un imponente monumento que
+                                            se alza sobre
+                                            Cali. Este lugar sagrado es tanto un punto de peregrinación como un mirador,
+                                            proporcionando
+                                            una experiencia espiritual y visual única.
+                                        </p>
+                                        <button class="Cristo  bg-primary text-white">Comentarios</button>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $(".Cristo").on("click", function () {
+                                                    // Cambiar la información con la nueva información de comentarios
+                                                    // Cambiar la información con la nueva información de comentarios
+                                                    $("#collapseTres .row").html(`
+                                                    <div class="col-md-12">
+                                                    <strong style="margin-bottom: 1px;">Comentarios</strong>
+                                                        <ul id="comentariosTres">
+                                                            <li>La iglesia parece un castillo</li>
+                                                            <li>Deberian darle mas importancia a esta iglesia</li>
+                                                            <li>Esperaba ver algo mejor</li>
+                                                        </ul>
+                                                                <form id="formComentarioTres">
+                                                                <textarea id="nuevoComentarioTres"></textarea>
+                                                                <input type="submit" value="Enviar comentario">
+                                                                </form>
+                                                    </div>
+                                                    `);
+
+                                                    // Manejar el envío del comentario
+                                                    $("#formComentarioTres").submit(function (event) {
+                                                        event.preventDefault();
+                                                        var nuevoComentario = $("#nuevoComentarioTres").val();
+                                                        $("#comentariosTres").append("<li>" + nuevoComentario + "</li>");
+                                                        // Puedes limpiar el campo de comentario después de agregarlo si lo deseas
+                                                        $("#nuevoComentarioTres").val("");
+                                                    });
+
+                                                    // También puedes agregar algún estilo adicional si lo necesitas
+
+                                                    // Por último, puedes ocultar el botón de comentarios si lo deseas
+                                                    $(".Cristo").hide();
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Cuarto acordeón -->
+            <div class="col-md-6">
+                <div class="accordion" id="accordionCuatro ">
+                    <div class="accordion-item">
+                        <div>
+                            <img src="imagenes/SanAntonio.webp" class="img-fluid guia-image sanAntonio-imagen"
+                                alt="San Antonio">
+                        </div>
+
+                        <h2 class="accordion-header" id="headingCuatro">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseCuatro" aria-expanded="true" aria-controls="collapseCuatro">
+                                San Antonio
+                            </button>
+                        </h2>
+
+                        <div id="collapseCuatro" class="accordion-collapse collapse " aria-labelledby="headingCuatro"
+                            data-bs-parent="#accordionCuatro">
+                            <div class="accordion-body">
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <strong style="margin-bottom: 1px;">Nombre</strong> San Antonio <br>
+                                        <strong style="margin-bottom: 1px;">Horarios</strong> Lunes 2pm a 6pm- Martes
+                                        10am a 4pm<br>
+                                        <strong style="margin-bottom: 1px;">Guias</strong> Isabella Rodriguez<br>
+                                        <strong style="margin-bottom: 1px;">Informacion del lugar</strong>
+                                        <p>San Antonio es un encantador barrio que respira historia y cultura.
+                                            Sus calles empedradas y casas coloniales dan testimonio del pasado de Cali.
+                                            La iglesia homónima, con su arquitectura colonial, es un símbolo de la
+                                            herencia histórica. Además, San Antonio se llena de vida con galerías de
+                                            arte,
+                                            cafés y eventos culturales que atraen tanto a locales como a visitantes..
+                                        </p>
+                                        <button class="Antonio bg-primary text-white">Comentarios</button>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $(".Antonio").on("click", function () {
+                                                // Cambiar la información con la nueva información de comentarios
+                                                    $("#collapseCuatro .row").html(`
+                                                    <div class="col-md-12">
+                                                    <strong style="margin-bottom: 1px;">Comentarios</strong>
+                                                        <ul id="comentariosCuatro">
+                                                            <li>La iglesia parece un castillo</li>
+                                                            <li>Deberian darle mas importancia a esta iglesia</li>
+                                                            <li>Esperaba ver algo mejor</li>
+                                                        </ul>
+                                                                <form id="formComentarioCuatro">
+                                                                <textarea id="nuevoComentarioCuatro"></textarea>
+                                                                <input type="submit" value="Enviar comentario">
+                                                                </form>
+                                                    </div>
+                                                    `);
+
+                                                    // Manejar el envío del comentario
+                                                    $("#formComentarioCuatro").submit(function (event) {
+                                                        event.preventDefault();
+                                                        var nuevoComentario = $("#nuevoComentarioCuatro").val();
+                                                        $("#comentariosCuatro").append("<li>" + nuevoComentario + "</li>");
+                                                        // Puedes limpiar el campo de comentario después de agregarlo si lo deseas
+                                                        $("#nuevoComentarioCuatro").val("");
+                                                    });
+                                                    // También puedes agregar algún estilo adicional si lo necesitas
+
+                                                    // Por último, puedes ocultar el botón de comentarios si lo deseas
+                                                    $(".Antonio").hide();
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Quinto acordeón -->
+            <div class="col-md-6">
+                <div class="accordion" id="accordionCinco">
+                    <div class="accordion-item">
+                        <div>
+                            <img src="imagenes/HaciendaPichinde.jpg" class="img-fluid guia-image hacienda-imagen"
+                                alt="Hacienda Pichinde">
+                        </div>
+
+                        <h2 class="accordion-header" id="headingCinco">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseCinco" aria-expanded="true" aria-controls="collapseCinco">
+                                Hacienda Pichinde
+                            </button>
+                        </h2>
+
+                        <div id="collapseCinco" class="accordion-collapse collapse " class="acordeon hacienda"
+                            aria-labelledby="headingCinco" data-bs-parent="#accordionCinco">
+                            <div class="accordion-body">
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <strong style="margin-bottom: 1px;">Nombre</strong> Hacienda Pichinde <br>
+                                        <strong style="margin-bottom: 1px;">Horarios</strong> viernes 8pm a 12pm- Sabado
+                                        1am a 7pm<br>
+                                        <strong style="margin-bottom: 1px;">Guias</strong> Roberto Mendoza<br>
+                                        <strong style="margin-bottom: 1px;">Informacion del lugar</strong>
+                                        <p>La Hacienda Pichindé es un tesoro histórico y natural a las afueras de Cali.
+                                            Rodeada de exuberantes paisajes, esta hacienda preserva la herencia colonial
+                                            y ofrece una experiencia única. Los visitantes pueden explorar la
+                                            arquitectura
+                                            tradicional, los jardines bien cuidados y sumergirse en la cultura cafetera.
+                                            Pichindé es un escape tranquilo que transporta a los visitantes a otra
+                                            época.</p>
+                                        <button class="alv bg-primary text-white">Comentarios</button>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $(".alv").on("click", function () {
+                                                    // Cambiar la información con la nueva información de comentarios
+                                                    $("#collapseCinco .row").html(`
+                                                    <div class="col-md-12">
+                                                    <strong style="margin-bottom: 1px;">Comentarios</strong>
+                                                        <ul id="comentariosCinco">
+                                                            <li>La iglesia parece un castillo</li>
+                                                            <li>Deberian darle mas importancia a esta iglesia</li>
+                                                            <li>Esperaba ver algo mejor</li>
+                                                        </ul>
+                                                                <form id="formComentarioCinco">
+                                                                <textarea id="nuevoComentarioCinco"></textarea>
+                                                                <input type="submit" value="Enviar comentario">
+                                                                </form>
+                                                    </div>
+                                                    `);
+
+                                                    // Manejar el envío del comentario
+                                                    $("#formComentarioCinco").submit(function (event) {
+                                                        event.preventDefault();
+                                                        var nuevoComentario = $("#nuevoComentarioCinco").val();
+                                                        $("#comentariosCinco").append("<li>" + nuevoComentario + "</li>");
+                                                        // Puedes limpiar el campo de comentario después de agregarlo si lo deseas
+                                                        $("#nuevoComentarioCinco    ").val("");
+                                                    });
+                                                    // También puedes agregar algún estilo adicional si lo necesitas
+
+                                                    // Por último, puedes ocultar el botón de comentarios si lo deseas
+                                                    $(".alv").hide();
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!--sexto Acordion-->
+            <div class="col-md-6">
+                <div class="accordion" id="accordionSeis">
+                    <div class="accordion-item">
+                        <div>
+                            <img src="imagenes/zoologico.jpg" class="img-fluid guia-image zoologico-imagen"
+                                alt="Hacienda Pichinde">
+                        </div>
+
+                        <h2 class="accordion-header" id="headingSeis">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeis" aria-expanded="true" aria-controls="collapseSeis">
+                                zoologico de Cali
+                            </button>
+                        </h2>
+
+                        <div id="collapseSeis" class="accordion-collapse collapse " aria-labelledby="headingSeis"
+                            data-bs-parent="#accordionSeis">
+                            <div class="accordion-body">
+                                <div class="row">
+
+                                    <div class="col-md-12   ">
+                                        <strong style="margin-bottom: 1px;">Nombre</strong>zoologico de Cali <br>
+                                        <strong style="margin-bottom: 1px;">Horarios</strong> jueves 6am a 12pm- domingo
+                                        1am a 7pm<br>
+                                        <strong style="margin-bottom: 1px;">Guias</strong>Alejandra Torres<br>
+                                        <strong style="margin-bottom: 1px;">Informacion del lugar</strong>
+                                        <p>Sumérgete en la asombrosa biodiversidad del Zoológico de Cali, un refugio
+                                            natural en el corazón de la ciudad Este espacio te invita a explorar el
+                                            fascinante mundo de la vida salvaje, en un entorno educativo y emocionante.
+                                            Dirigido por apasionados defensores de la conservación, el zoológico va más
+                                            allá de ser un simple parque; es un compromiso vivo con la preservación y
+                                            educación. Con programas dedicados a la protección de especies y actividades
+                                            interactivas, cada visita se convierte en una experiencia enriquecedora para
+                                            toda la familia.
+                                        </p>
+                                        <button class="zoologico bg-primary text-white">Comentarios</button>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $(".zoologico").on("click", function () {
+                                                  // Cambiar la información con la nueva información de comentarios
+                                                    $("#collapseSeis .row").html(`
+                                                    <div class="col-md-12">
+                                                    <strong style="margin-bottom: 1px;">Comentarios</strong>
+                                                        <ul id="comentariosSeis">
+                                                            <li>La iglesia parece un castillo</li>
+                                                            <li>Deberian darle mas importancia a esta iglesia</li>
+                                                            <li>Esperaba ver algo mejor</li>
+                                                        </ul>
+                                                                <form id="formComentarioSeis">
+                                                                <textarea id="nuevoComentarioSeis"></textarea>
+                                                                <input type="submit" value="Enviar comentario">
+                                                                </form>
+                                                    </div>
+                                                    `);
+
+                                                    // Manejar el envío del comentario
+                                                    $("#formComentarioSeis").submit(function (event) {
+                                                        event.preventDefault();
+                                                        var nuevoComentario = $("#nuevoComentarioSeis").val();
+                                                        $("#comentariosSeis").append("<li>" + nuevoComentario + "</li>");
+                                                        // Puedes limpiar el campo de comentario después de agregarlo si lo deseas
+                                                        $("#nuevoComentarioSeis    ").val("");
+                                                    });
+                                                    // Por último, puedes ocultar el botón de comentarios si lo deseas
+                                                    $(".zoologico").hide();
+                                                });
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div>
+        <img src="imagenes/vacaciones.gif" class="vacaciones-gif" alt="vacaciones">
+    </div>
+
+    <footer class="pie-pagina">
+        <!-- Contenedor principal del pie de página -->
+        <div class="grupo-1">
+            <div class="box">
+                <!-- Caja con una imagen-->
+                <figure>
+                    <a href="#">
+                        <img src="imagenes/img9.jpeg " alt="">
+                    </a>
+
+
+                </figure>
+
+            </div>
+            <div class="box">
+                <!-- Caja con información "Sobre nosotros" -->
+                <h2>Sobre nosotros</h2>
+                <p>Andres Felipe vivas palacios <br>
+                    correo: andres.vivas02@usc.edu.co
+                </p>
+                <p>Hoyos Tovar Luis Gabriel <br>
+                    correo: Luis.hoyos01@usc.edu.co
+                </p>
+                <p>Luis Felipe Waitoto Garces <br>
+                    correo: Lfwg98@gmail.com
+                </p>
+
+                <h2>Ingeniera de Sistemas</h2>
+
+            </div>
+            <div class="box">
+                <!-- Caja con enlaces a redes sociales -->
+                <h2>Siguenos</h2>
+                <P class="red-social">
+                    <i class="bi bi-twitter text white mx-1"></i>
+                    <i class="bi bi-instagram text white mx-1"></i>
+                    <i class="bi bi-facebook text white mx-1"></i>
+                    <i class="bi bi-youtube text white mx-1"></i>
+                </P>
+                <div>
+                    <h2>Soporte al cliente</h2>
+                    <p>
+                        <a href="mailto: supporttraveling@gmai.com"><em>link soporte</em></a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="grupo-2">
+            <!-- Información de derechos de autor y año -->
+
+            <small>&copy; 2023 <b>Slee Dw</b> - todos los derechos reservados. </small>
+
+        </div>
+
+
+    </footer>
+
+    <!-- Inclusión del script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

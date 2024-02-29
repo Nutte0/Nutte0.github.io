@@ -1,0 +1,270 @@
+/* Ajustes para los elementos de navegación de la barra */
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+/* Estilos para el texto del logotipo en la barra de navegación */
+.navbar-dark .navbar-brand {
+    color: #ffff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+/* Cambia el color del logotipo al hacer hover o focus */
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #000;
+}
+
+/* Ajustes para la altura de elementos con clase 'w-100' */
+
+.w-100 {
+    height: 100vh;
+}
+
+/* Estilos para el botón de la barra de navegación */
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+
+
+/* Estilos del carrusel */
+.carousel-caption p {
+    /* Cambia el color del texto */
+    color: rgba(255, 255, 255, 1);
+    /* Ajusta el tamaño de fuente */
+    font-size: 24px;
+    /* Permite ajustar la posición en el slide */
+    position: absolute;
+    /* Posiciona el texto verticalmente en el centro */
+    top: 50%;
+    /* Posiciona el texto horizontalmente en el centro */
+    left: 50%;
+    /* Centra el texto correctamente */
+    transform: translate(-50%, -50%);
+    /* Alineación justificada del texto */
+    text-align: justify;
+    /* Espaciado uniforme entre palabras */
+    text-justify: inter-word;
+    /* Agrega sombra al texto de los slides */
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 1);
+    /* Ocupa todo el ancho del carrusel */
+    width: 100%;
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+.carousel-item {
+    height: 90vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 200px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+/* Estilos generales */
+.text-light {
+    color: var(--white);
+    margin-top: 4rem;
+}
+
+.justify-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bg-light {
+    background-color: var(--white);
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.guia-image {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+/* Estilos del acordeón */
+/* Estilos del acordeón */
+.accordion-item {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Añadí un margen inferior para separar los acordeones */
+    max-width: 400px; 
+    margin-left: 100px;
+}
+
+.accordion-body {
+    padding: 10px; /* Ajuste de relleno para el contenido del acordeón */
+    height: auto; /* Ajusta este valor según tus necesidades */
+    
+    overflow: auto; /* Agrega barras de desplazamiento si el contenido es demasiado grande */
+    overflow-x: hidden;
+}
+
+.accordion-item .img-area {
+    width: 100%;
+    max-width: 400px; /* Ajusta este valor según tus necesidades */
+    height: auto; /* Ajusta este valor según tus necesidades */
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden; /* Asegura que las imágenes no desborden el contenedor */
+}
+
+
+.accordion-body strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.accordion-collapse {
+    max-height: 380px;
+   
+    overflow-x: hidden;
+}
+
+.accordion-item .accordion-body p {
+    text-align: justify;
+    max-width: 110%;
+    white-space: normal;
+}
+.hacienda-imagen{
+    width: 100%; /* Puedes ajustar este valor según tus necesidades */
+    height: 400px; /* Esto mantiene la proporción original de la imagen */
+}
+.SanAntonio-imagen{
+    width: 100%; /* Puedes ajustar este valor según tus necesidades */
+    height: 380px; /* Esto mantiene la proporción original de la imagen */
+}
+
+.cristoRey-imagen{
+    width: 100%; /* Puedes ajustar este valor según tus necesidades */
+    height: 380px; /* Esto mantiene la proporción original de la imagen */ 
+}
+
+.zoologico-imagen{
+    width: 100%; /* Puedes ajustar este valor según tus necesidades */
+    height: 400px; /* Esto mantiene la proporción original de la imagen */
+}
+
+#collapseUno .row {
+    margin-top: 10px; /* Puedes ajustar este valor según sea necesario */
+}
+
+#collapseSeis .accordion-body {
+    max-height: 300px; /* Establece una altura máxima para el contenedor, ajusta según sea necesario */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    /* Ajusta la propiedad 'object-fit' según tus necesidades (cover, contain, etc.) */
+    height: 100%;
+    width: 100%;
+    filter: brightness(80%);
+    /* Ajusta el valor de brillo según tus preferencias (0% - 100%) */
+}
+.vacaciones-gif {
+    display: block;
+    margin: 0 auto;
+    /* Esto centrará el GIF horizontalmente */
+    margin-top: 10px;
+    /* Agrega un espacio entre el GIF y los cuadros */
+    margin-left: 500px;
+    /* Ajusta este valor para mover el GIF hacia la derecha */
+    margin-bottom: 20px;
+}
+
+
+/*footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Pie de Pagina*/
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+/* Estilos para el primer grupo de elementos en el pie de página */
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 30px;
+}
+
+/* Estilos para el segundo grupo de elementos en el pie de página */
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/* Estilos responsivos para dispositivos con ancho máximo de 800px */
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
